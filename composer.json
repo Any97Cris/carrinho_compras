@@ -1,0 +1,15 @@
+{
+    "name": "crisciany/projeto_carrinho_compra",
+    "autoload": {
+        "psr-4": {
+            "app\\": "app/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Any97Cris",
+            "email": "criscianysilva1997@gmail.com"
+        }
+    ],
+    "require": {}
+}
