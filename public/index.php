@@ -47,5 +47,7 @@ $products = $produc->all('id,name,slug,price,imagem');
       <?php endforeach ?>
     </ul>
   </div>
+
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 </body>
 </html>
