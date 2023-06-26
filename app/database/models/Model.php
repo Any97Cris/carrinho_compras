@@ -19,8 +19,18 @@ abstract class Model{
         return $this->attributes[$key];
     }
 
-    public function toJson(array $value){
-        echo json_encode($value);
+    public function toJson(array $fields = []){
+        $attributes = [];
+
+        if(!empty($fields)){
+            foreach($fields as $field){
+                $attributes[$field] = $this->attributes[$field];
+            }
+        }else{
+            $attributes = $this->attributes;
+        }
+
+        return json_encode($attributes);
     }
 
     public function all(string $fields = '*'){
