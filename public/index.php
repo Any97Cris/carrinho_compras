@@ -22,10 +22,11 @@ $products = $produc->all('id,name,slug,price,imagem');
 <div class="container">
     <div id="total-products-in-cart" class="d-flex justify-content-between align-middle">
       <div>
-        Total de Produtos no Carrinho <i class="bi bi-cart-check"></i>: <span id="totalQuantity" class="fw-bold">0</span>
+        Total de Produtos no Carrinho <i class="bi bi-cart-check"></i>: 
+        <span id="totalQuantity" class="fw-bold">0</span>
         <span id="totalPrice" class="fw-bold">0</span>
       </div>
-      <button id="btn-clear-cart" class="btn btn-danger btn-sm"><i class="bi bi-cart"></i> Clear cart</button>
+      <button id="btn-clear-cart" class="btn btn-danger btn-sm"><i class="bi bi-cart"></i> Limpar Carrinho</button>
     </div>
     <ul>
       <?php foreach ($products as $product) : ?>
@@ -49,5 +50,6 @@ $products = $produc->all('id,name,slug,price,imagem');
   </div>
 
   <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+  <script type="module" src="./assets/js/main.js"></script>
 </body>
 </html>
